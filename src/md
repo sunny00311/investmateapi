@@ -1,0 +1,37 @@
+{
+\_id: new ObjectId('697b9422cb7b3c18c00d0c3f'),
+userId: new ObjectId('697b9422cb7b3c18c00d0c3d'),
+fullName: 'Deepanshu ',
+firm: '',
+sectors: [ 'Edtech' ],
+bio: '',
+createdAt: 2026-01-29T17:08:50.920Z,
+updatedAt: 2026-01-29T17:08:50.920Z,
+\_\_v: 0
+}
+
+//
+{
+\_id: new ObjectId('697b8ae1a05b4e72833873b5'),
+name: 'sunny sahni',
+email: 'sunnysahani003@gmail.com',
+password: '$2b$10$Tixp3LNqrVEIJbs/SQ0EQOUoVY1u/Sfyk0LyjFHga8.wK8ponk.vm',
+role: 'startup',
+createdAt: 2026-01-29T16:29:21.962Z,
+updatedAt: 2026-01-29T16:29:21.962Z,
+\_\_v: 0
+},
+
+    {
+    _id: new ObjectId('697b945cb6562dad2a3cd2e5'),
+    investorId: new ObjectId('697b9422cb7b3c18c00d0c3f'),
+    startupId: new ObjectId('697b931dcb7b3c18c00d0c27'),
+    status: 'accepted',
+    message: 'Interested in your startup',
+    createdAt: 2026-01-29T17:09:48.988Z,
+    updatedAt: 2026-01-29T17:10:13.267Z,
+    __v: 0
+
+},
+
+697ba144b93973c0dac8fa2d
