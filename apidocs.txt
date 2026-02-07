@@ -1,0 +1,139 @@
+api---http://localhost:3000/matchmaking-investor
+data to sent 
+
+"investorData": {
+    "_id": "697b9422cb7b3c18c00d0c3f",
+    "userId": "697b9422cb7b3c18c00d0c3d",
+    "fullName": "Deepanshu",
+    "firm": "",
+    "sectors": ["Edtech"],
+    "bio": "",
+    "createdAt": "2026-01-29T17:08:50.920Z",
+    "updatedAt": "2026-01-29T17:08:50.920Z",
+    "__v": 0
+  }
+
+
+
+eg res
+{
+  "raw": "```json\n[\n  {\n    \"matchedUserId\": \"697b8ae1a05b4e72833873b5\",\n    \"explanation\": \"JeetKro is the strongest match for Deepanshu as it aligns perfectly with his focus on the Edtech sector. The startup is at the MVP stage with significant traction (2,000+ sign-ups), making it a lower-risk investment compared to idea-stage projects. Furthermore, its use of AI and gamification follows the current market trend of hyper-personalization in learning.\"\n  },\n  {\n    \"matchedUserId\": \"697b931ccb7b3c18c00d0c25\",\n    \"explanation\": \"Tutortech matches the investor's specific domain interest in Edtech. Although it is at the 'Idea' stage, it addresses a fundamental problem in education (concept clarity) and seeks a funding amount (50 Lakhs) that is typical for early-stage angel investments.\"\n  },\n  {\n    \"matchedUserId\": \"697b95e02e090be6e93eab25\",\n    \"explanation\": \"Edu sprint (founded by Harsh Baloch) is a suitable match because it focuses on AI-driven personalized learning, which is currently a high-growth segment within Edtech. It complements the investor's industry focus and offers a solution to the lack of personalized tracking in online education.\"\n  },\n  {\n    \"matchedUserId\": \"697c48e7f149afebcca3ff11\",\n    \"explanation\": \"This instance of Edu sprint also falls within the Edtech sector. While the profile is less detailed than others, the core domain alignment makes it a potential match for an investor looking to diversify their portfolio within the education technology space.\"\n  }\n]\n```"
+}
+
+api--http://localhost:3000/matchmaking-startup
+data to send 
+{
+    _id: new ObjectId('697b8ae2a05b4e72833873b7'),
+    userId: new ObjectId('697b8ae1a05b4e72833873b5'),
+    startupName: 'jeetkro',
+    tagline: 'LEARN AND FUN',
+    founderName: 'sunny sahni',
+    stage: 'MVP',
+    problem: 'Students find learning boring and lack motivation due to traditional teaching 
+methods.',
+    solution: 'JeetKro provides AI-based educational games that turn learning into interactive challenges, improving engagement, retention, and performance.',
+    prevFunding: 'No',
+    createdAt: 2026-01-29T16:29:22.245Z,
+    updatedAt: 2026-01-30T10:04:00.126Z,
+    __v: 0,
+    fundUsage: 'Seeking ₹50 Lakhs seed funding to scale product development, AI models, and 
+marketing.',
+    funding: 'Seeking ₹50 Lakhs seed funding to scale product development, AI models, and marketing.',
+    industry: 'EdTech',
+    location: 'Bangalore, India',
+    market: 'Currently piloted in 5 colleges with 2,000+ student sign-ups and growing engagement through gamified quizzes and competitions.',
+    phone: '7678262335',
+    revenueModel: 'Freemium model with premium subscriptions for institutions, in-app purchases, and sponsored educational tournaments',
+    teamSize: 4,
+    techStack: 'node js',
+    traction: '',
+    valueProp: 'JeetKro provides AI-based educational games that turn learning into interactive challenges, improving engagement, retention, and performance.',
+    website: 'https://jeetkro.in/for-startups',
+    socialLinks: {
+      linkedin: 'https://www.linkedin.com/company/jeetkro',
+      twitter: 'https://x.com/jeetkro',
+      other: 'https://www.producthunt.com/products/jeetkro'
+    }
+  }
+
+eg respnse
+[
+  {
+    "userId": "697b931ccb7b3c18c00d0c25",
+    "explanation": "Strategic EdTech Alignment: As a fellow EdTech entity focusing on concept-strengthening, Tutortech shares a similar market demographic. Their interest in the 50 Lakhs funding bracket and educational problem-solving makes them a primary candidate for a strategic partnership or co-investment to dominate the student engagement market."
+  },
+  {
+    "userId": "697b95e02e090be6e93eab25",
+    "explanation": "Domain & Tech Synergy: Edu Sprint focuses on AI-driven personalized learning and progress tracking. JeetKro's gamified AI challenges would serve as the perfect front-end engagement layer for Edu Sprint’s back-end assessment logic, making this a high-compatibility match for product integration."
+  },
+  {
+    "userId": "697b976d2e090be6e93eab3d",
+    "explanation": "Technical Infrastructure Match: JeetKro is seeking funding to scale AI models. Intellicore specializes in custom AI and machine learning solutions. This match is based on technical compatibility where Intellicore can provide the infrastructure or strategic investment required to refine JeetKro's gamification algorithms."
+  },
+  {
+    "userId": "697c409ab7bc6424fa23a636",
+    "explanation": "Stage & Capability Match: AITech is at the 'Launched' stage with previous funding experience. Being in the AI/ML sector and having already navigated the funding cycle, they represent a 'Big Brother' match—an entity that has the industry experience and technical maturity to invest in or mentor an MVP-stage startup like JeetKro."
+  },
+  {
+    "userId": "697c48e7f149afebcca3ff11",
+    "explanation": "Market Expansion Match: This Edu Sprint profile emphasizes 'Interactive education.' Since JeetKro is already piloted in 5 colleges with 2,000 sign-ups, this match provides a localized synergy for scaling interactive educational tools across Indian institutions."
+  }
+]
+ api /startup-coach
+
+data to sent same as above startup matcmaker api
+eg response 
+
+{
+  "analysis": {
+    "startup_name": "JeetKro",
+    "idea_strength": "High. Gamification in EdTech is a proven model (e.g., Duolingo, Kahoot), and applying it specifically to the Indian collegiate ecosystem addresses a high-friction area of student engagement.",
+    "market_fit": {
+      "status": "Early Validation",
+      "observations": "2,000+ sign-ups across 5 colleges indicates a strong initial pull. The 'Indian' context (JeetKro - 'Win It') resonates with the competitive nature of the local education system."
+    },
+    "traction": {
+      "user_base": 2000,
+      "engagement": "Growing through quizzes/competitions; however, long-term retention data (cohort analysis) is likely missing at the MVP stage."
+    },
+    "risks": {
+      "content_fatigue": "Gamified elements can lose novelty quickly if the core educational value isn't deep.",
+      "competition": "Low barriers to entry; established players like Unacademy or Byju's could integrate similar features.",
+      "monetization": "Indian students are price-sensitive; converting free users to premium or institutional B2B sales cycles can be long."
+    }
+  },
+  "actionable_advice": {
+    "growth": [
+      "Launch a 'Campus Ambassador' program to turn the 5 piloted colleges into high-density hubs.",
+      "Implement viral loops: Reward users with in-game currency for inviting peers or topping leaderboards shared on WhatsApp/Instagram.",
+      "Focus on 'Daily Active Users' (DAU) as the North Star metric rather than total sign-ups."
+    ],
+    "funding": [
+      "The ₹50 Lakhs ask is modest. Target Indian micro-VCs (e.g., Better Capital, Titan Capital) or EdTech-focused angels.",
+      "Ensure the pitch deck highlights the 'AI-engine' capabilities—specifically how it personalizes the difficulty level for students to prevent churn.",
+      "Showcase a clear path to B2B revenue (College tie-ups) to de-risk the investment from pure B2C CAC concerns."
+    ],
+    "execution": [
+      "Transition from simple quizzes to 'Tournament' modes that create high-stakes excitement.",
+      "Strengthen the Tech Stack: Node.js is fine for the backend, but ensure the AI model isn't just a wrapper; it must provide genuine 'adaptive learning' insights.",
+      "Secure 3 institutional LOIs (Letters of Intent) to prove the B2B revenue model before the seed round ends."
+    ]
+  },
+  "coach_verdict": {
+    "score": "7.5/10",
+    "summary": "JeetKro has solid early momentum. The transition from a 'fun app' to an 'essential learning tool' will be the difference between a featureset and a scalable business. Focus on proving that gamification leads to better exam scores, not just more screen time."
+  }
+}
+
+
+
+api investor coach  http://localhost:3000/investor-coach
+
+data to sent same as investor matcher api
+
+eg response 
+
+{
+  "raw": "```json\n{\n  \"investor_analysis\": {\n    \"profile_id\": \"697b9422cb7b3c18c00d0c3f\",\n    \"investor_name\": \"Deepanshu\",\n    \"status\": \"Early-Stage Specialist / Emerging Angel\",\n    \"sector_focus\": [\n      \"Edtech\"\n    ],\n    \"risk_profile\": \"High Concentration\",\n    \"critical_observation\": \"The profile indicates a deep but narrow vertical focus. While specialization allows for superior due diligence, the lack of firm affiliation and bio suggests a 'stealth' or nascent stage in brand building, which may limit high-quality deal flow access in a competitive 2026 market.\"\n  },\n  \"strategic_recommendations\": {\n    \"thesis_refinement\": \"Move beyond 'Edtech' as a general category. Pivot toward 'Cognitive Infrastructure'—focusing on GenAI-native personalized learning paths, B2B workforce reskilling, and micro-credentialing platforms that provide immediate ROI for users.\",\n    \"portfolio_diversification\": \"To mitigate the risks of a single-sector focus, look for 'Edtech-Adjacent' opportunities such as HR-Tech, Creator Economy tools for educators, or Neurotech for focus and memory retention.\",\n    \"brand_equity\": \"Formalize the 'Firm' entity. In the 2026 investment landscape, founders prioritize 'Value-Add' investors. Develop a bio that highlights specific expertise in scaling educational products or navigating Edtech regulations.\"\n  },\n  \"market_alignment_guidance\": {\n    \"current_trend\": \"The 'Post-MOOC' era. The market has shifted from content delivery to 'Outcome-as-a-Service'. Pure content platforms are commoditized; technical moats (AI tutors) and social moats (community-led learning) are winning.\",\n    \"valuation_benchmark\": \"Avoid overpaying for user growth without retention. Focus on LTV/CAC ratios specifically within the specialized learning niches.\",\n    \"exit_environment\": \"Edtech M&A is currently driven by legacy corporations acquiring AI-capabilities. Look for startups that are 'built to be integrated' or those disrupting the $2T corporate training market.\"\n  },\n  \"actionable_roadmap\": [\n    {\n      \"step\": 1,\n      \"action\": \"Profile Optimization\",\n      \"detail\": \"Define and publish a specific investment thesis (e.g., 'Investing in AI-driven pedagogical tools for the Global South') to attract targeted inbound deals.\"\n    },\n    {\n      \"step\": 2,\n      \"action\": \"Syndicate Participation\",\n      \"detail\": \"Since currently unaffiliated with a firm, join 2-3 elite investment syndicates specializing in AI and Future of Work to see diversified deal flow.\"\n    },\n    {\n      \"step\": 3,\n      \"action\": \"Network Expansion\",\n      \"detail\": \"Establish partnerships with university incubators and accelerator programs (e.g., YC, GSV Labs) to capture pre-seed talent before valuations skyrocket.\"\n    },\n    {\n      \"step\": 4,\n      \"action\": \"Due Diligence Focus\",\n      \"detail\": \"Prioritize startups solving the 'completion rate' problem—look for gamification, social proof, and AI-feedback loops as core product features.\"\n    }\n  ]\n}\n```"
+}
+
